@@ -8,7 +8,7 @@ def make_api_call(messages, max_tokens, is_final_answer=False):
     for attempt in range(3):
         try:
             response = ollama.chat(
-                model="llama3.1:70b",
+                model="llama3.3:70b",
                 messages=messages,
                 options={"temperature":0.2, "num_predict":max_tokens},
                 format='json',
