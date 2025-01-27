@@ -11,7 +11,7 @@ import requests
 client = groq.Groq()
 exa = Exa(api_key=os.environ.get("EXA_API_KEY"))
 
-model = "llama-3.1-70b-versatile"
+model = "llama-3.3-70b-versatile"
 
 def make_api_call(messages, max_tokens, is_final_answer=False, custom_client=None):
     global client
